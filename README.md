@@ -1,2 +1,2 @@
-## sh script using to convert .mp4 to .mov, and using in davinci resolve.
+## gay sex turns me on
 he fucking loves femboy girl(boys)
