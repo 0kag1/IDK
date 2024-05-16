@@ -9,6 +9,20 @@ print(spin_words("тагил чечня россия гремания китай
 >>> лигат янчеч яиссор яинамерг йатик аниарку аводлом сша
 """
 def spin_words(sentence):
+    list_of_words = list(sentence.split(" "))
+    
+    i = 0
+    str = []
+    for words in list_of_words:
+        if list_of_words[i] == "abobus":
+            str.append("amogus_ne_lubim")
+        elif len(list_of_words[i]) >= 5:
+            str.append(list_of_words[i][::-1])
+        else:
+            str.append(list_of_words[i])
+        i += 1
+    s = ' '.join(str)
+    return s
 
 
 
