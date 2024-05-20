@@ -8,10 +8,9 @@ print(spin_words("suti voprosa takova blablabla abobus"))
 print(spin_words("тагил чечня россия гремания китай украина молдова сша"))
 >>> лигат янчеч яиссор яинамерг йатик аниарку аводлом сша
 """
-def spin_words(sentence):
 
 
-
+asdadasda
 
 
 
