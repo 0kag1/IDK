@@ -10,7 +10,7 @@ print(spin_words("тагил чечня россия гремания китай
 """
 
 
-asdadasda
+
 
 
 
