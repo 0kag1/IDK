@@ -8,35 +8,35 @@ print(spin_words("suti voprosa takova blablabla abobus"))
 print(spin_words("тагил чечня россия гремания китай украина молдова сша"))
 >>> лигат янчеч яиссор яинамерг йатик аниарку аводлом сша
 """
-def spin_words(x):
-    str(x)
-    x = x + " "
-    z = ""
-    a = 0
-    g = ""
-    for c in x:
-        if c != " ":
-            a += 1
-            z += c
+def spin_words(string):
+    string += " "
+    word = ""
+    sentence = ""
+    length = 0
+    for character in string:
+        if character != " ":
+            length += 1
+            word += character
         else:
-            if a >= 5:
-                b = z[::-1]
-                g += b
-                g += " "
+            if length >= 5:
+                word_to_sent_one = word[::-1]
+                sentence += word_to_sent_one
+                sentence += " "
             else:
-                d = z
-                g += d
-                g += " "
-            a = 0
-            z = ""
+                word_to_sent_two = word
+                sentence += word_to_sent_two
+                sentence += " "
+            lenght = 0
+            word = ""
             continue
-    if "suboba" in g:
-        new_g = g.replace("suboba", "amogus_ne_lubim")
-        return new_g
+    if "suboba" in sentence:
+        new_sentence = sentence.replace("suboba", "amogus_ne_lubim"); sentence[:-1]
+        return new_sentence
     else:
-        return g
+        new_sentence = sentence[:-1]
+        return new_sentence
 
-print (spin_words("suti voprosa takova blablabla abobus"))
+
 #ЭТО ТЕСТЫ ИХ НЕ ТРОГАТЬ!!!!!!
 def test_spins():
     assert spin_words("самара владивосток владикавказ омск москва") == "арамас котсовидалв заквакидалв омск авксом"
