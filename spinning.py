@@ -8,33 +8,21 @@ print(spin_words("suti voprosa takova blablabla abobus"))
 print(spin_words("тагил чечня россия гремания китай украина молдова сша"))
 >>> лигат янчеч яиссор яинамерг йатик аниарку аводлом сша
 """
-def spin_words(string):
-    string += " "
-    word = ""
-    sentence = ""
-    length = 0
-    for character in string:
-        if character != " ":
-            length += 1
-            word += character
+def spin_words(sentence):
+    list_of_words = list(sentence.split(" "))
+    
+    i = 0
+    str = []
+    for words in list_of_words:
+        if list_of_words[i] == "abobus":
+            str.append("amogus_ne_lubim")
+        elif len(list_of_words[i]) >= 5:
+            str.append(list_of_words[i][::-1])
         else:
-            if length >= 5:
-                word_to_sent_one = word[::-1]
-                sentence += word_to_sent_one
-                sentence += " "
-            else:
-                word_to_sent_two = word
-                sentence += word_to_sent_two
-                sentence += " "
-            lenght = 0
-            word = ""
-            continue
-    if "suboba" in sentence:
-        new_sentence = sentence.replace("suboba", "amogus_ne_lubim"); sentence[:-1]
-        return new_sentence
-    else:
-        new_sentence = sentence[:-1]
-        return new_sentence
+            str.append(list_of_words[i])
+        i += 1
+    s = ' '.join(str)
+    return s  
 
 
 #ЭТО ТЕСТЫ ИХ НЕ ТРОГАТЬ!!!!!!
