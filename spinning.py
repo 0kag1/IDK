@@ -10,13 +10,13 @@ print(spin_words("тагил чечня россия гремания китай
 """
 def spin_words(string):
     string += " "
-    word, sentence, length = "", "", 0
+    word, sentence, lenght = "", "", 0
     for character in string:
         if character != " ":
-            length += 1
+            lenght += 1
             word += character
         else:
-            if length >= 5:
+            if lenght > 4:
                 word_to_sent_one = word[::-1] + " "
                 sentence += word_to_sent_one
             else:
@@ -29,6 +29,7 @@ def spin_words(string):
     else:
         new_sentence = sentence
     return new_sentence[:-1]  
+print(spin_words("Дом Дом Дом Zalupatron"))
 
 
 #ЭТО ТЕСТЫ ИХ НЕ ТРОГАТЬ!!!!!!
